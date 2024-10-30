@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="Stats" load_steps=2 format=3 uid="uid://ctsm80lyhfvrc"]
+
+[ext_resource type="Script" path="res://scenes/player/stats.gd" id="1_dechm"]
+
+[resource]
+script = ExtResource("1_dechm")
+friction = 1000
+max_speed = 75
