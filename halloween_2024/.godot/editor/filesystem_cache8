@@ -1,0 +1,14 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1730331247
+icon.svg::CompressedTexture2D::4040354552617317751::1730331223::1730331247::1::::<><>::
+::res://scenes/::1730331223
+::res://scenes/areas/::1730331223
+Halloween_Maze.tscn::PackedScene::2844419721364579085::1730331223::0::1::::<><>::uid://niac6ejfn8ec::::res://tiles/ground.tres<>uid://nd82qsrcktei::::res://scenes/player/player.tscn<>uid://ctsm80lyhfvrc::::res://scenes/player/player_stats.tres
+::res://scenes/player/::1730331223
+player.gd::GDScript::-1::1730331223::0::1::::Player<>CharacterBody2D<>::
+player.tscn::PackedScene::920700846708897644::1730331223::0::1::::<><>::res://scenes/player/player.gd<>res://scenes/player/stats.gd
+player_stats.tres::Resource/Stats::6144377062370580592::1730331223::0::1::::<><>::res://scenes/player/stats.gd
+stats.gd::GDScript::-1::1730331223::0::1::::Stats<>Resource<>::
+::res://tiles/::1730331223
+ground.tres::TileSet::928975195733930854::1730331223::0::1::::<><>::uid://hiexw322dmph::::res://tiles/ground_v1.png
+ground_v1.png::CompressedTexture2D::508122068760779997::1730331223::1730331247::1::::<><>::
