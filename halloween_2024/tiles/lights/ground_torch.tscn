@@ -156,8 +156,6 @@ _data = {
 
 [node name="Torch" instance=ExtResource("1_fn6xc")]
 y_sort_enabled = true
-texture_filter = 1
-color = Color(1, 0.827451, 0.286275, 0.372549)
 range_z_max = 5
 shadow_color = Color(0, 0, 0, 0.686275)
 shadow_filter = 2

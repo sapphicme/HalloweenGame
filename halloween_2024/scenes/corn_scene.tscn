@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://wslof3i2w2pm"]
+
+[ext_resource type="Texture2D" uid="uid://c0lrnjvnmsmfx" path="res://tiles/corn.png" id="1_qv2t2"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_iilgk"]
+radius = 5.0
+height = 10.0
+
+[node name="corn2" type="StaticBody2D"]
+z_index = 1
+y_sort_enabled = true
+position = Vector2(0, -8)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, 9)
+texture = ExtResource("1_qv2t2")
+offset = Vector2(0, -9)
+hframes = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 10)
+shape = SubResource("CapsuleShape2D_iilgk")

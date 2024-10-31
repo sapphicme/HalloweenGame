@@ -1,8 +1,7 @@
 res://scenes/areas/Halloween_Maze.tscn
 res://tiles/ground.tres
 res://scenes/player/player.tscn
-res://scenes/player/stats.gd
-res://scenes/player/player_stats.tres
 res://tiles/lights/ground_torch.tscn
 res://tiles/lights/torch.tscn
-res://tiles/lights/new_torch.tscn
+res://tiles/lights/jackolantern.tscn
+res://scenes/corn_scene.tscn
