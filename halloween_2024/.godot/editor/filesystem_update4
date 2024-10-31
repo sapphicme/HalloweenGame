@@ -1,2 +1,5 @@
 res://scenes/areas/Halloween_Maze.tscn
 res://tiles/ground.tres
+res://scenes/player/player.tscn
+res://scenes/player/stats.gd
+res://scenes/player/player_stats.tres
