@@ -5,4 +5,4 @@
 [resource]
 script = ExtResource("1_dechm")
 friction = 1000
-max_speed = 50
+max_speed = 60

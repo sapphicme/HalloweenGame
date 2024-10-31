@@ -273,7 +273,7 @@ animations = [{
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_b312i"]
 radius = 4.0
-height = 12.0
+height = 18.0
 
 [sub_resource type="Animation" id="Animation_dt4au"]
 length = 0.001
@@ -663,11 +663,13 @@ editor_draw_limits = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
+position = Vector2(0, 8)
 sprite_frames = SubResource("SpriteFrames_ug3lx")
 animation = &"walk_down"
+offset = Vector2(0, -8)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 7)
+position = Vector2(0, 4)
 shape = SubResource("CapsuleShape2D_b312i")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
