@@ -2,16 +2,15 @@
 
 [ext_resource type="Texture2D" uid="uid://c0lrnjvnmsmfx" path="res://tiles/corn.png" id="1_qv2t2"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_iilgk"]
-radius = 5.0
-height = 10.0
+[sub_resource type="CircleShape2D" id="CircleShape2D_dbsq6"]
+radius = 7.0
 
 [node name="corn2" type="StaticBody2D"]
-z_index = 1
 y_sort_enabled = true
 position = Vector2(0, -8)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+y_sort_enabled = true
 position = Vector2(0, 9)
 texture = ExtResource("1_qv2t2")
 offset = Vector2(0, -9)
@@ -19,4 +18,4 @@ hframes = 8
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 10)
-shape = SubResource("CapsuleShape2D_iilgk")
+shape = SubResource("CircleShape2D_dbsq6")
