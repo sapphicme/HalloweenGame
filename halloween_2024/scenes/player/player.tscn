@@ -272,8 +272,8 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_b312i"]
-radius = 4.0
-height = 18.0
+radius = 2.0
+height = 10.0
 
 [sub_resource type="Animation" id="Animation_dt4au"]
 length = 0.001
@@ -669,7 +669,9 @@ animation = &"walk_down"
 offset = Vector2(0, -8)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 4)
+z_index = 1
+position = Vector2(1, 12)
+rotation = 1.5708
 shape = SubResource("CapsuleShape2D_b312i")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

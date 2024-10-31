@@ -1,2 +1,4 @@
+CollisionPolygon2D
+PointLight2D
 TileMapLayer
 CanvasModulate

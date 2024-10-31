@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://p3a6uvgvpv6b"]
+
+[ext_resource type="Texture2D" uid="uid://dh0xc6q5tkdne" path="res://tiles/lights/Light_maybe.png" id="1_hrrq3"]
+
+[node name="Torch" type="PointLight2D"]
+texture_filter = 1
+color = Color(1, 0.827451, 0.286275, 0.372549)
+energy = 3.0
+texture = ExtResource("1_hrrq3")
+texture_scale = 1.5

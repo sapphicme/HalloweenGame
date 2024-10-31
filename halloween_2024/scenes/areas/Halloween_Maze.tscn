@@ -1,8 +1,9 @@
-[gd_scene load_steps=10 format=4 uid="uid://bgr4ga5c1v7hx"]
+[gd_scene load_steps=13 format=4 uid="uid://bgr4ga5c1v7hx"]
 
 [ext_resource type="TileSet" uid="uid://niac6ejfn8ec" path="res://tiles/ground.tres" id="1_7us6a"]
 [ext_resource type="PackedScene" uid="uid://nd82qsrcktei" path="res://scenes/player/player.tscn" id="2_eaps3"]
 [ext_resource type="Texture2D" uid="uid://dexkuvtmjx7ok" path="res://tiles/foliage.png" id="2_uldq3"]
+[ext_resource type="PackedScene" uid="uid://xjy2e1pqci2m" path="res://tiles/lights/ground_torch.tscn" id="3_jx5od"]
 [ext_resource type="Resource" uid="uid://ctsm80lyhfvrc" path="res://scenes/player/player_stats.tres" id="3_lcct1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ofbkb"]
@@ -14,7 +15,6 @@ texture = ExtResource("2_uldq3")
 1:1/0 = 0
 3:1/size_in_atlas = Vector2i(1, 2)
 3:1/0 = 0
-3:1/0/texture_origin = Vector2i(0, 8)
 2:1/size_in_atlas = Vector2i(1, 2)
 2:1/next_alternative_id = 2
 2:1/0 = 0
@@ -22,6 +22,13 @@ texture = ExtResource("2_uldq3")
 
 [sub_resource type="TileSet" id="TileSet_85oby"]
 sources/0 = SubResource("TileSetAtlasSource_ofbkb")
+
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_42x83"]
+resource_name = "lights"
+scenes/1/scene = ExtResource("3_jx5od")
+
+[sub_resource type="TileSet" id="TileSet_43dqn"]
+sources/0 = SubResource("TileSetScenesCollectionSource_42x83")
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_quiix"]
 
@@ -58,6 +65,8 @@ tile_set = SubResource("TileSet_85oby")
 [node name="lights" type="TileMapLayer" parent="TileMaps/Demo"]
 z_index = 1
 y_sort_enabled = true
+tile_map_data = PackedByteArray("AAAeABsAAAAAAAAAAQAmACAAAAAAAAAAAQAgACMAAAAAAAAAAQA=")
+tile_set = SubResource("TileSet_43dqn")
 
 [node name="player" parent="TileMaps/Demo" instance=ExtResource("2_eaps3")]
 position = Vector2(544, 552)

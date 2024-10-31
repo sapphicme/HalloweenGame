@@ -1,0 +1,178 @@
+[gd_scene load_steps=15 format=3 uid="uid://xjy2e1pqci2m"]
+
+[ext_resource type="PackedScene" uid="uid://p3a6uvgvpv6b" path="res://tiles/lights/torch.tscn" id="1_fn6xc"]
+[ext_resource type="Texture2D" uid="uid://cat50k2vd7rnt" path="res://tiles/lights/Ground_torch-Sheet.png" id="2_vthcu"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hem2m"]
+atlas = ExtResource("2_vthcu")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4g12m"]
+atlas = ExtResource("2_vthcu")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xipml"]
+atlas = ExtResource("2_vthcu")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qcbv2"]
+atlas = ExtResource("2_vthcu")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_itgeb"]
+atlas = ExtResource("2_vthcu")
+region = Rect2(64, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hyeww"]
+atlas = ExtResource("2_vthcu")
+region = Rect2(80, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lxj52"]
+atlas = ExtResource("2_vthcu")
+region = Rect2(96, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6gqkh"]
+atlas = ExtResource("2_vthcu")
+region = Rect2(112, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8tn0i"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hem2m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4g12m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xipml")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qcbv2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_itgeb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hyeww")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lxj52")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6gqkh")
+}],
+"loop": true,
+"name": &"default",
+"speed": 6.0
+}]
+
+[sub_resource type="Animation" id="Animation_ryb4f"]
+resource_name = "Flicker"
+length = 1.6
+loop_mode = 1
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:sprite_frames")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [SubResource("SpriteFrames_8tn0i")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:texture_scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.75, 0.7, 0.65, 0.7, 0.75, 0.7, 0.65, 0.7]
+}
+
+[sub_resource type="Animation" id="Animation_sq6xo"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:sprite_frames")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [SubResource("SpriteFrames_8tn0i")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:texture_scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.75]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_yc2hw"]
+_data = {
+"Flicker": SubResource("Animation_ryb4f"),
+"RESET": SubResource("Animation_sq6xo")
+}
+
+[node name="Torch" instance=ExtResource("1_fn6xc")]
+y_sort_enabled = true
+texture_filter = 1
+color = Color(1, 0.827451, 0.286275, 0.372549)
+range_z_max = 5
+shadow_color = Color(0, 0, 0, 0.686275)
+shadow_filter = 2
+shadow_filter_smooth = 2.0
+shadow_item_cull_mask = 3
+texture_scale = 0.75
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." index="0"]
+y_sort_enabled = true
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_8tn0i")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="1"]
+libraries = {
+"": SubResource("AnimationLibrary_yc2hw")
+}
+autoplay = "Flicker"
+speed_scale = 0.75
