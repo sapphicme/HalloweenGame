@@ -5,3 +5,4 @@ res://tiles/lights/ground_torch.tscn
 res://tiles/lights/torch.tscn
 res://tiles/lights/jackolantern.tscn
 res://scenes/corn_scene.tscn
+res://scenes/areas/corn_new.tres
