@@ -1,0 +1,10 @@
+res://scenes/areas/corn_new.tres::14b8db41444253f2934393637d64f305::1730417975::res://.godot/exported/133200997/export-9a87edaf63a3673c4305a685446c6df3-corn_new.res
+res://scenes/areas/corn_tileset.tres::e07ee630a25ac6e4ba1df5699c48cd28::1730418687::res://.godot/exported/133200997/export-29476626209fb301d858527c7a7d4b64-corn_tileset.res
+res://scenes/areas/Halloween_Maze.tscn::136a97886d1dc5cdac06a04aeaac880b::1730418812::res://.godot/exported/133200997/export-b562f1d7f47eadcf8775b3e7a467281e-Halloween_Maze.scn
+res://scenes/player/player.tscn::82096f28b20dd6dc55da0c722695580a::1730409633::res://.godot/exported/133200997/export-c2c62cb8c73458cd122faf659769dc80-player.scn
+res://scenes/player/player_stats.tres::8e1ca2513661369b9ffbe5bc10441594::1730345282::res://.godot/exported/133200997/export-4e04e1656a0d39363d3d4213bb2c466f-player_stats.res
+res://scenes/corn_scene.tscn::0ea0cde10b7e4b6092756cc3b5d652e8::1730409634::res://.godot/exported/133200997/export-98639ea1c8399adf1d4c60f7f3282295-corn_scene.scn
+res://tiles/lights/ground_torch.tscn::66097a8766795f9c40bf70bda959e12b::1730409633::res://.godot/exported/133200997/export-01de65dc12ed23439d5e56f9191af215-ground_torch.scn
+res://tiles/lights/jackolantern.tscn::c0ab52e14ceb3485312d960815be70d9::1730409634::res://.godot/exported/133200997/export-97a41ad2d200558520504f79be561511-jackolantern.scn
+res://tiles/lights/torch.tscn::9b81e8a93506a7a403799255d18529f5::1730409634::res://.godot/exported/133200997/export-b054f85449f8d9c77b103f3891b809bd-torch.scn
+res://tiles/ground.tres::1be62aec904134a19e68f246200e561f::1730417975::res://.godot/exported/133200997/export-d268cb4a8e6bfea54d7ee554720d7e5c-ground.res

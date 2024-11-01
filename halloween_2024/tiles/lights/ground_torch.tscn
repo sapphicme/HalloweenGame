@@ -157,10 +157,11 @@ _data = {
 [node name="Torch" instance=ExtResource("1_fn6xc")]
 y_sort_enabled = true
 range_z_max = 5
+shadow_enabled = true
 shadow_color = Color(0, 0, 0, 0.686275)
 shadow_filter = 2
 shadow_filter_smooth = 2.0
-shadow_item_cull_mask = 3
+shadow_item_cull_mask = 31
 texture_scale = 0.75
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." index="0"]

@@ -638,8 +638,8 @@ states/walk/position = Vector2(373, 48)
 transitions = ["Start", "idle", SubResource("AnimationNodeStateMachineTransition_xlsks"), "idle", "walk", SubResource("AnimationNodeStateMachineTransition_ulej6"), "walk", "idle", SubResource("AnimationNodeStateMachineTransition_o66ko")]
 graph_offset = Vector2(88.5667, 0)
 
-[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_3ed74"]
-polygon = PackedVector2Array(-3, -14, 3, -14, 6, -11, 6, -9, 6, -5, 6, 0, 8, 3, 7, 7, 4, 6, 4, 10, 6, 11, 6, 13, 5, 14, 2, 14, 0, 12, -2, 14, -5, 14, -6, 13, -6, 11, -4, 10, -4, 6, -7, 7, -8, 3, -6, 0, -6, -5, -6, -9, -6, -11)
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_41qhj"]
+polygon = PackedVector2Array(4, 8, 5, 7, 5, 5, 4, 4, 3, 4, 3, 1, 5, 1, 5, -11, 2, -13, -3, -13, -6, -11, -6, 1, -4, 1, -4, 4, -5, 4, -6, 5, -6, 7, -5, 8, -2, 8, -1, 7, 0, 7, 1, 8)
 
 [node name="player" type="CharacterBody2D"]
 z_index = 1
@@ -689,5 +689,5 @@ parameters/walk/TimeScale/scale = 1.0
 parameters/walk/walk_bs2d/blend_position = Vector2(0, 1)
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="."]
-visible = false
-occluder = SubResource("OccluderPolygon2D_3ed74")
+position = Vector2(1, 7)
+occluder = SubResource("OccluderPolygon2D_41qhj")
