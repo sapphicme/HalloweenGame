@@ -5,3 +5,4 @@ res://scenes/areas/corn_tileset.tres
 res://scenes/corn_scene.tscn
 res://tiles/lights/ground_torch.tscn
 res://scenes/player/player.tscn
+res://tiles/lights/spirit_orb.tscn

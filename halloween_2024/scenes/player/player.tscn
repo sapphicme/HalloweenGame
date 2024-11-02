@@ -639,7 +639,8 @@ transitions = ["Start", "idle", SubResource("AnimationNodeStateMachineTransition
 graph_offset = Vector2(88.5667, 0)
 
 [sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_41qhj"]
-polygon = PackedVector2Array(4, 8, 5, 7, 5, 5, 4, 4, 3, 4, 3, 1, 5, 1, 5, -11, 2, -13, -3, -13, -6, -11, -6, 1, -4, 1, -4, 4, -5, 4, -6, 5, -6, 7, -5, 8, -2, 8, -1, 7, 0, 7, 1, 8)
+cull_mode = 1
+polygon = PackedVector2Array(4, 6, 4, 6, 4, 5, 4, 4, 3, 4, 3, 1, 4, 0, 4, -11, 3, -15, 1, -16, -3, -16, -4, -14, -5, -11, -5, 0, -4, 1, -4, 4, -5, 4, -5, 5, -5, 6, -4, 6, -2, 6, -1, 6, 0, 6, 1, 6)
 
 [node name="player" type="CharacterBody2D"]
 z_index = 1
@@ -663,7 +664,7 @@ editor_draw_limits = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
-position = Vector2(0, 8)
+position = Vector2(0, 7)
 sprite_frames = SubResource("SpriteFrames_ug3lx")
 animation = &"walk_down"
 offset = Vector2(0, -8)
