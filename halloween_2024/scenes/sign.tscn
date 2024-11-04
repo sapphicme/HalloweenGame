@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://prjwyypp7m1u"]
+
+[ext_resource type="Script" path="res://scenes/sign.gd" id="1_0miuy"]
+[ext_resource type="Texture2D" uid="uid://cwyqjjpbjsnea" path="res://tiles/sign_halloween.png" id="1_ya3f5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cfbst"]
+size = Vector2(20, 18)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_gmfcd"]
+radius = 2.0
+
+[node name="Sign" type="Area2D"]
+collision_mask = 2
+script = ExtResource("1_0miuy")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = 1
+y_sort_enabled = true
+position = Vector2(0, 6)
+texture = ExtResource("1_ya3f5")
+offset = Vector2(0, -6)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 16)
+shape = SubResource("RectangleShape2D_cfbst")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, 6)
+shape = SubResource("CircleShape2D_gmfcd")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

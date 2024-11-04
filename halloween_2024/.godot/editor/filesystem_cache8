@@ -1,41 +1,50 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1730506745
-export_presets.cfg::TextFile::-1::1730419261::0::1::::<><>::
-icon.svg::CompressedTexture2D::4040354552617317751::1730331223::1730331247::1::::<><>::
-::res://AllHallowsMaze/::1730419963
-AllHallowsMaze.apple-touch-icon.png::CompressedTexture2D::8159023877741244060::1730419209::1730419963::1::::<><>::
-AllHallowsMaze.icon.png::CompressedTexture2D::6202092757614184909::1730419209::1730419963::1::::<><>::
-AllHallowsMaze.png::CompressedTexture2D::4230399218409574752::1730419209::1730419963::1::::<><>::
-::res://scenes/::1730507523
-corn_scene.tscn::PackedScene::1582006553916623318::1730507523::0::1::::<><>::uid://c0lrnjvnmsmfx::::res://tiles/corn.png
-::res://scenes/areas/::1730507523
-corn_new.tres::TileSet::3983585086034430674::1730505417::0::1::::<><>::uid://wslof3i2w2pm::::res://scenes/corn_scene.tscn<>uid://c0lrnjvnmsmfx::::res://tiles/corn.png
-corn_tileset.tres::TileSet::1274110484837143153::1730503954::0::1::::<><>::uid://dexkuvtmjx7ok::::res://tiles/foliage.png<>uid://c0lrnjvnmsmfx::::res://tiles/corn.png
-Halloween_Maze.tscn::PackedScene::2844419721364579085::1730507523::0::1::::<><>::uid://niac6ejfn8ec::::res://tiles/ground.tres<>uid://wslof3i2w2pm::::res://scenes/corn_scene.tscn<>uid://nd82qsrcktei::::res://scenes/player/player.tscn<>uid://bw0xcgnr2qmas::::res://scenes/areas/corn_new.tres<>uid://xjy2e1pqci2m::::res://tiles/lights/ground_torch.tscn<>uid://ctsm80lyhfvrc::::res://scenes/player/player_stats.tres<>uid://sfgocbuicj82::::res://scenes/areas/corn_tileset.tres<>uid://wnmn2ig68oqc::::res://tiles/lights/jackolantern.tscn<>uid://iij33u3l4mgc::::res://tiles/20 by 50 orthogonal maze.png<>uid://bell44ht5aq8f::::res://tiles/lights/spirit_orb.tscn
-::res://scenes/player/::1730507524
-player.gd::GDScript::-1::1730331223::0::1::::Player<>CharacterBody2D<>::
-player.tscn::PackedScene::920700846708897644::1730507524::0::1::::<><>::res://scenes/player/player.gd<>res://scenes/player/stats.gd<>uid://cx3xqtkm2hj16::::res://scenes/player/player_ghost_animation_sheet.png
-player_ghost_animation_sheet.png::CompressedTexture2D::6446413425684017183::1730342658::1730342658::1::::<><>::
-player_stats.tres::Resource/Stats::6144377062370580592::1730345282::0::1::::<><>::res://scenes/player/stats.gd
-stats.gd::GDScript::-1::1730341251::0::1::::Stats<>Resource<>::
-::res://tiles/::1730418624
-20 by 50 orthogonal maze.png::CompressedTexture2D::578623729138910358::1730400296::1730400296::1::::<><>::
-corn.png::CompressedTexture2D::6551326523587924897::1730353757::1730353757::1::::<><>::
-foliage.png::CompressedTexture2D::7488142132680400622::1730418624::1730418624::1::::<><>::
-ground.tres::TileSet::928975195733930854::1730417975::0::1::::<><>::uid://hiexw322dmph::::res://tiles/ground_v1.png
-ground_v1.png::CompressedTexture2D::508122068760779997::1730344551::1730344551::1::::<><>::
-::res://tiles/lights/::1730507630
-9abd3ada580477456ad75a7f093dc2b1.jpg::CompressedTexture2D::6193462432110323637::1730347798::1730347799::1::::<><>::
-Ground_torch-Sheet.png::CompressedTexture2D::4813931267246605601::1730347485::1730347485::1::::<><>::
-ground_torch.gd::GDScript::-1::1730347464::0::1::::<>PointLight2D<>::
-ground_torch.tscn::PackedScene::1634428478684427058::1730507524::0::1::::<><>::uid://p3a6uvgvpv6b::::res://tiles/lights/torch.tscn<>uid://cat50k2vd7rnt::::res://tiles/lights/Ground_torch-Sheet.png
-jackolantern.png::CompressedTexture2D::2131825753362563412::1730355611::1730355611::1::::<><>::
-jackolantern.tscn::PackedScene::1571744720877692690::1730409634::0::1::::<><>::uid://c50m56pwtpwix::::res://tiles/lights/pumpkinlight.png<>uid://5mw4gwea6kum::::res://tiles/lights/jackolantern.png
-Light_maybe.png::CompressedTexture2D::7703595117148037898::1730347849::1730347853::1::::<><>::
-pumpkinlight.png::CompressedTexture2D::6930899950530518183::1730355611::1730355611::1::::<><>::
-Screenshot 2024-10-29 132446.png::CompressedTexture2D::4035873632033475393::1730411346::1730411346::1::::<><>::
-Screenshot 2024-10-29 132538.png::CompressedTexture2D::654941277146979281::1730411206::1730411207::1::::<><>::
-spirit_orb.png::CompressedTexture2D::5838169138301326053::1730506378::1730506378::1::::<><>::
-spirit_orb.tscn::PackedScene::2690605423377729063::1730507524::0::1::::<><>::uid://dh0xc6q5tkdne::::res://tiles/lights/Light_maybe.png<>uid://cpgb17n437so8::::res://tiles/lights/spirit_orb.png
-spirit_orb_yellow.png::CompressedTexture2D::8401403652181070453::1730507630::1730507630::1::::<><>::
-torch.tscn::PackedScene::1110691674504397371::1730409634::0::1::::<><>::uid://dh0xc6q5tkdne::::res://tiles/lights/Light_maybe.png
+::res://::1730680524
+export_presets.cfg::TextFile::-1::1730415661::0::1::::<><>::
+icon.svg::CompressedTexture2D::4040354552617317751::1730327623::1730672951::1::::<><>::
+textItem.gd::GDScript::-1::1730680348::0::1::::TextItem<>Resource<>::
+text_test.tres::Resource/TextItem::5763540298613019387::1730680373::0::1::::<><>::res://textItem.gd
+::res://AllHallowsMaze/::1730672951
+AllHallowsMaze.apple-touch-icon.png::CompressedTexture2D::8159023877741244060::1730415609::1730672951::1::::<><>::
+AllHallowsMaze.icon.png::CompressedTexture2D::6202092757614184909::1730415609::1730672951::1::::<><>::
+AllHallowsMaze.png::CompressedTexture2D::4230399218409574752::1730415609::1730672951::1::::<><>::
+::res://font/::1730676852
+PixelLove-WqGv.ttf::FontFile::5671560114346096850::1730676852::1730676852::1::::<><>::
+::res://Resources/::1730680524
+::res://scenes/::1730680501
+corn_scene.tscn::PackedScene::1582006553916623318::1730680451::0::1::::<><>::uid://c0lrnjvnmsmfx::::res://tiles/corn.png
+sign.gd::GDScript::-1::1730680501::0::1::::<>Area2D<>::
+sign.tscn::PackedScene::1088514115128866184::1730680527::0::1::::<><>::res://scenes/sign.gd<>uid://cwyqjjpbjsnea::::res://tiles/sign_halloween.png<>uid://cod5wwwgio0g2::::res://text_test.tres
+::res://scenes/areas/::1730680451
+corn_new.tres::TileSet::3983585086034430674::1730672966::0::1::::<><>::uid://wslof3i2w2pm::::res://scenes/corn_scene.tscn<>uid://c0lrnjvnmsmfx::::res://tiles/corn.png
+corn_tileset.tres::TileSet::1274110484837143153::1730672966::0::1::::<><>::uid://dexkuvtmjx7ok::::res://tiles/foliage.png<>uid://c0lrnjvnmsmfx::::res://tiles/corn.png
+Halloween_Maze.tscn::PackedScene::2844419721364579085::1730680451::0::1::::<><>::uid://niac6ejfn8ec::::res://tiles/ground.tres<>uid://wslof3i2w2pm::::res://scenes/corn_scene.tscn<>uid://nd82qsrcktei::::res://scenes/player/player.tscn<>uid://bw0xcgnr2qmas::::res://scenes/areas/corn_new.tres<>uid://xjy2e1pqci2m::::res://tiles/lights/ground_torch.tscn<>uid://ctsm80lyhfvrc::::res://scenes/player/player_stats.tres<>uid://sfgocbuicj82::::res://scenes/areas/corn_tileset.tres<>uid://wnmn2ig68oqc::::res://tiles/lights/jackolantern.tscn<>uid://iij33u3l4mgc::::res://tiles/20 by 50 orthogonal maze.png<>uid://bell44ht5aq8f::::res://tiles/lights/spirit_orb.tscn<>uid://prjwyypp7m1u::::res://scenes/sign.tscn<>uid://cm2l1ca4nf7ji::::res://font/PixelLove-WqGv.ttf<>res://scenes/areas/label.gd
+label.gd::GDScript::-1::1730679761::0::1::::SignText<>Label<>::
+::res://scenes/player/::1730680452
+player.gd::GDScript::-1::1730327623::0::1::::Player<>CharacterBody2D<>::
+player.tscn::PackedScene::920700846708897644::1730680452::0::1::::<><>::res://scenes/player/player.gd<>res://scenes/player/stats.gd<>uid://cx3xqtkm2hj16::::res://scenes/player/player_ghost_animation_sheet.png
+player_ghost_animation_sheet.png::CompressedTexture2D::6446413425684017183::1730339058::1730672951::1::::<><>::
+player_stats.tres::Resource/Stats::6144377062370580592::1730341682::0::1::::<><>::res://scenes/player/stats.gd
+stats.gd::GDScript::-1::1730337651::0::1::::Stats<>Resource<>::
+::res://tiles/::1730675207
+20 by 50 orthogonal maze.png::CompressedTexture2D::578623729138910358::1730396696::1730672951::1::::<><>::
+corn.png::CompressedTexture2D::6551326523587924897::1730350157::1730672951::1::::<><>::
+foliage.png::CompressedTexture2D::7488142132680400622::1730415024::1730672951::1::::<><>::
+ground.tres::TileSet::928975195733930854::1730672966::0::1::::<><>::uid://hiexw322dmph::::res://tiles/ground_v1.png
+ground_v1.png::CompressedTexture2D::508122068760779997::1730340951::1730672951::1::::<><>::
+sign_halloween.png::CompressedTexture2D::6367529033490159292::1730675207::1730675207::1::::<><>::
+::res://tiles/lights/::1730680452
+9abd3ada580477456ad75a7f093dc2b1.jpg::CompressedTexture2D::6193462432110323637::1730344198::1730672951::1::::<><>::
+Ground_torch-Sheet.png::CompressedTexture2D::4813931267246605601::1730343885::1730672951::1::::<><>::
+ground_torch.gd::GDScript::-1::1730343864::0::1::::<>PointLight2D<>::
+ground_torch.tscn::PackedScene::1634428478684427058::1730680451::0::1::::<><>::uid://p3a6uvgvpv6b::::res://tiles/lights/torch.tscn<>uid://cat50k2vd7rnt::::res://tiles/lights/Ground_torch-Sheet.png
+jackolantern.png::CompressedTexture2D::2131825753362563412::1730352011::1730672951::1::::<><>::
+jackolantern.tscn::PackedScene::1571744720877692690::1730406034::0::1::::<><>::uid://c50m56pwtpwix::::res://tiles/lights/pumpkinlight.png<>uid://5mw4gwea6kum::::res://tiles/lights/jackolantern.png
+Light_maybe.png::CompressedTexture2D::7703595117148037898::1730344249::1730672951::1::::<><>::
+pumpkinlight.png::CompressedTexture2D::6930899950530518183::1730352011::1730672951::1::::<><>::
+Screenshot 2024-10-29 132446.png::CompressedTexture2D::4035873632033475393::1730407746::1730672951::1::::<><>::
+Screenshot 2024-10-29 132538.png::CompressedTexture2D::654941277146979281::1730407606::1730672951::1::::<><>::
+spirit_orb.png::CompressedTexture2D::5838169138301326053::1730502778::1730672951::1::::<><>::
+spirit_orb.tscn::PackedScene::2690605423377729063::1730680452::0::1::::<><>::uid://dh0xc6q5tkdne::::res://tiles/lights/Light_maybe.png<>uid://cpgb17n437so8::::res://tiles/lights/spirit_orb.png
+spirit_orb_yellow.png::CompressedTexture2D::8401403652181070453::1730504030::1730672951::1::::<><>::
+torch.tscn::PackedScene::1110691674504397371::1730406034::0::1::::<><>::uid://dh0xc6q5tkdne::::res://tiles/lights/Light_maybe.png

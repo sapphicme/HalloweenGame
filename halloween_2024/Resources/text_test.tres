@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="TextItem" load_steps=2 format=3 uid="uid://cod5wwwgio0g2"]
+
+[ext_resource type="Script" path="res://Resources/textItem.gd" id="1_u7tgl"]
+
+[resource]
+script = ExtResource("1_u7tgl")
+text = "Beware!! Enter if you dare"

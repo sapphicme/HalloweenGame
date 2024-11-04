@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="TextItem" load_steps=2 format=3 uid="uid://crammei8w7cmq"]
+
+[ext_resource type="Script" path="res://Resources/textItem.gd" id="1_rgcwn"]
+
+[resource]
+script = ExtResource("1_rgcwn")
+text = "I mean it, this maze is not for the faint of heart"
