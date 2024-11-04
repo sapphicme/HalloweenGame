@@ -5,12 +5,12 @@
 [ext_resource type="PackedScene" uid="uid://nd82qsrcktei" path="res://scenes/player/player.tscn" id="2_eaps3"]
 [ext_resource type="Resource" uid="uid://cod5wwwgio0g2" path="res://Resources/text_test.tres" id="2_q51bd"]
 [ext_resource type="TileSet" uid="uid://bw0xcgnr2qmas" path="res://scenes/areas/corn_new.tres" id="3_6ssii"]
-[ext_resource type="PackedScene" uid="uid://xjy2e1pqci2m" path="res://tiles/lights/ground_torch.tscn" id="3_jx5od"]
+[ext_resource type="PackedScene" uid="uid://xjy2e1pqci2m" path="res://lights/ground_torch.tscn" id="3_jx5od"]
 [ext_resource type="Resource" uid="uid://ctsm80lyhfvrc" path="res://scenes/player/player_stats.tres" id="3_lcct1"]
 [ext_resource type="TileSet" uid="uid://sfgocbuicj82" path="res://scenes/areas/corn_tileset.tres" id="4_jense"]
-[ext_resource type="PackedScene" uid="uid://wnmn2ig68oqc" path="res://tiles/lights/jackolantern.tscn" id="5_28ynm"]
+[ext_resource type="PackedScene" uid="uid://wnmn2ig68oqc" path="res://lights/jackolantern.tscn" id="5_28ynm"]
 [ext_resource type="Texture2D" uid="uid://iij33u3l4mgc" path="res://tiles/20 by 50 orthogonal maze.png" id="9_oew87"]
-[ext_resource type="PackedScene" uid="uid://bell44ht5aq8f" path="res://tiles/lights/spirit_orb.tscn" id="10_b6as7"]
+[ext_resource type="PackedScene" uid="uid://bell44ht5aq8f" path="res://lights/spirit_orb.tscn" id="10_b6as7"]
 [ext_resource type="PackedScene" uid="uid://prjwyypp7m1u" path="res://scenes/sign.tscn" id="11_fvjd6"]
 [ext_resource type="FontFile" uid="uid://cm2l1ca4nf7ji" path="res://font/PixelLove-WqGv.ttf" id="12_7aku6"]
 [ext_resource type="Script" path="res://scenes/areas/label.gd" id="12_b2hjt"]
@@ -106,7 +106,7 @@ tile_set = ExtResource("4_jense")
 [node name="lights" type="TileMapLayer" parent="TileMaps/Demo"]
 z_index = 1
 y_sort_enabled = true
-tile_map_data = PackedByteArray("AAAeABsAAAAAAAAAAwAmACAAAAAAAAAAAwAgACMAAAAAAAAAAwAnABcAAAAAAAAAAwAgABcAAAAAAAAAAwALABcAAAAAAAAAAQAnABsAAAAAAAAAAwA5ABcAAAAAAAAAAQAiABAAAAAAAAAAAQAMAAQAAAAAAAAAAQAMAPT/AAAAAAAAAQAcAPr/AAAAAAAAAQApAAIAAAAAAAAAAQAmAPL/AAAAAAAAAQAnAOn/AAAAAAAAAQATAO7/AAAAAAAAAQAMAOX/AAAAAAAAAQAmABUAAAAAAAAAAgAhABcAAAAAAAAAAgA6ABUAAAAAAAAAAgAMABUAAAAAAAAAAgAUANv/AAAAAAAAAQAWANH/AAAAAAAAAQAYAMP/AAAAAAAAAQAkAMX/AAAAAAAAAQAwAMH/AAAAAAAAAQAfAJ7/AAAAAAAAAQAkAJ7/AAAAAAAAAQAyAKD/AAAAAAAAAQArALD/AAAAAAAAAQAhALP/AAAAAAAAAQArAMH/AAAAAAAAAQAOAMz/AAAAAAAAAQAjAM3/AAAAAAAAAQAlAJv/AAAAAAAAAgAeAJ3/AAAAAAAAAgA=")
+tile_map_data = PackedByteArray("AAALABcAAAAAAAAAAQA5ABcAAAAAAAAAAQAiABAAAAAAAAAAAQAMAAQAAAAAAAAAAQAMAPT/AAAAAAAAAQAcAPr/AAAAAAAAAQApAAIAAAAAAAAAAQAmAPL/AAAAAAAAAQAnAOn/AAAAAAAAAQATAO7/AAAAAAAAAQAMAOX/AAAAAAAAAQAmABUAAAAAAAAAAgAhABcAAAAAAAAAAgA6ABUAAAAAAAAAAgAMABUAAAAAAAAAAgAUANv/AAAAAAAAAQAWANH/AAAAAAAAAQAYAMP/AAAAAAAAAQAkAMX/AAAAAAAAAQAwAMH/AAAAAAAAAQAfAJ7/AAAAAAAAAQAkAJ7/AAAAAAAAAQAyAKD/AAAAAAAAAQArALD/AAAAAAAAAQAhALP/AAAAAAAAAQArAMH/AAAAAAAAAQAOAMz/AAAAAAAAAQAjAM3/AAAAAAAAAQAlAJv/AAAAAAAAAgAeAJ3/AAAAAAAAAgAeABsAAAAAAAAAAQApABsAAAAAAAAAAQAgACMAAAAAAAAAAQAVABcAAAAAAAAAAwAxABUAAAAAAAAAAwA5AAkAAAAAAAAAAwAtAAwAAAAAAAAAAwAaAAcAAAAAAAAAAwArAPL/AAAAAAAAAwARAPv/AAAAAAAAAwAfAPH/AAAAAAAAAwAhAAIAAAAAAAAAAwA3AP7/AAAAAAAAAwA1AO3/AAAAAAAAAwAyAN//AAAAAAAAAwAfAOH/AAAAAAAAAwAYANj/AAAAAAAAAwAMANv/AAAAAAAAAwAdAMr/AAAAAAAAAwAOAMH/AAAAAAAAAwAyAM7/AAAAAAAAAwAmANP/AAAAAAAAAwA0ALn/AAAAAAAAAwAeAL7/AAAAAAAAAwAaALP/AAAAAAAAAwA5AMX/AAAAAAAAAwArAMf/AAAAAAAAAwAQANH/AAAAAAAAAwAPAKL/AAAAAAAAAwAMAK7/AAAAAAAAAwAiAKT/AAAAAAAAAwAsAJz/AAAAAAAAAwAtAKb/AAAAAAAAAwAYAKv/AAAAAAAAAwA4AKn/AAAAAAAAAwA5AKD/AAAAAAAAAwAyALH/AAAAAAAAAwApALr/AAAAAAAAAwA9ALv/AAAAAAAAAwA+AMv/AAAAAAAAAwA8AN3/AAAAAAAAAwA/AO3/AAAAAAAAAwA8AAIAAAAAAAAAAwA/APf/AAAAAAAAAwA/ABIAAAAAAAAAAwA8ABwAAAAAAAAAAwAyAB8AAAAAAAAAAwAXAB8AAAAAAAAAAwAOACAAAAAAAAAAAwArACQAAAAAAAAAAwAHABMAAAAAAAAAAwAUABAAAAAAAAAAAwAHAP//AAAAAAAAAwAJAO//AAAAAAAAAwAUAOj/AAAAAAAAAwAYAPT/AAAAAAAAAwAEAOD/AAAAAAAAAwAJANf/AAAAAAAAAwAFAM3/AAAAAAAAAwAJAL//AAAAAAAAAwADALf/AAAAAAAAAwAHAKv/AAAAAAAAAwAFAJz/AAAAAAAAAwASAJX/AAAAAAAAAwAlAJf/AAAAAAAAAwAyAJf/AAAAAAAAAwA/AJv/AAAAAAAAAwA/AKz/AAAAAAAAAwAlAB8AAAAAAAAAAwA=")
 tile_set = SubResource("TileSet_43dqn")
 
 [node name="maze_template" type="Sprite2D" parent="TileMaps/Demo"]

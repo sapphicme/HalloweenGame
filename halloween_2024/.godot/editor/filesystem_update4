@@ -14,3 +14,6 @@ res://sign_text1.txt
 res://textItem.gd
 res://Resources/text_test.tres
 res://Resources/another_text_test.tres
+res://lights/spirit_orb.tscn
+res://lights/orb.gd
+res://lights/ground_torch.tscn

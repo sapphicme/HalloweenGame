@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://p3a6uvgvpv6b"]
 
-[ext_resource type="Texture2D" uid="uid://dh0xc6q5tkdne" path="res://tiles/lights/Light_maybe.png" id="1_hrrq3"]
+[ext_resource type="Texture2D" uid="uid://dh0xc6q5tkdne" path="res://lights/Light_maybe.png" id="1_hrrq3"]
 
 [node name="Torch" type="PointLight2D"]
 texture_filter = 1

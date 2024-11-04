@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bxraip6qv4nl6"
-path="res://.godot/imported/Screenshot 2024-10-29 132446.png-bdd2fe7b9c681f4052e655fd3a91b08d.ctex"
+path="res://.godot/imported/Screenshot 2024-10-29 132446.png-2932482265862c1576f31fcbe71bb3f9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tiles/lights/Screenshot 2024-10-29 132446.png"
-dest_files=["res://.godot/imported/Screenshot 2024-10-29 132446.png-bdd2fe7b9c681f4052e655fd3a91b08d.ctex"]
+source_file="res://lights/Screenshot 2024-10-29 132446.png"
+dest_files=["res://.godot/imported/Screenshot 2024-10-29 132446.png-2932482265862c1576f31fcbe71bb3f9.ctex"]
 
 [params]
 

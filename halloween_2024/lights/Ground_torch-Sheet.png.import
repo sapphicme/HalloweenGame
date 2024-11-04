@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cat50k2vd7rnt"
-path="res://.godot/imported/Ground_torch-Sheet.png-b000a6b5fb686332c5a1081efd24451b.ctex"
+path="res://.godot/imported/Ground_torch-Sheet.png-373c7f661f230751eacbf9224ac5a4e8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tiles/lights/Ground_torch-Sheet.png"
-dest_files=["res://.godot/imported/Ground_torch-Sheet.png-b000a6b5fb686332c5a1081efd24451b.ctex"]
+source_file="res://lights/Ground_torch-Sheet.png"
+dest_files=["res://.godot/imported/Ground_torch-Sheet.png-373c7f661f230751eacbf9224ac5a4e8.ctex"]
 
 [params]
 

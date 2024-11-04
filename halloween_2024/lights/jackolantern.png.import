@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://drxx5jvyov76p"
-path="res://.godot/imported/spirit_orb_yellow.png-ecea9d7135687dd51554d228d395f827.ctex"
+uid="uid://5mw4gwea6kum"
+path="res://.godot/imported/jackolantern.png-249b998d48a7465ccd1234b039ae723b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tiles/lights/spirit_orb_yellow.png"
-dest_files=["res://.godot/imported/spirit_orb_yellow.png-ecea9d7135687dd51554d228d395f827.ctex"]
+source_file="res://lights/jackolantern.png"
+dest_files=["res://.godot/imported/jackolantern.png-249b998d48a7465ccd1234b039ae723b.ctex"]
 
 [params]
 

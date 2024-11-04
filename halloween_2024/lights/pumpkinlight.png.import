@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cpgb17n437so8"
-path="res://.godot/imported/spirit_orb.png-1995a7030e914aae1329558a617861e8.ctex"
+uid="uid://c50m56pwtpwix"
+path="res://.godot/imported/pumpkinlight.png-8e23eb8b82e5fb2327e2ca847ef43e19.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tiles/lights/spirit_orb.png"
-dest_files=["res://.godot/imported/spirit_orb.png-1995a7030e914aae1329558a617861e8.ctex"]
+source_file="res://lights/pumpkinlight.png"
+dest_files=["res://.godot/imported/pumpkinlight.png-8e23eb8b82e5fb2327e2ca847ef43e19.ctex"]
 
 [params]
 

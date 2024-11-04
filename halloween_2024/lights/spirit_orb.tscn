@@ -1,7 +1,11 @@
-[gd_scene load_steps=13 format=3 uid="uid://bell44ht5aq8f"]
+[gd_scene load_steps=15 format=3 uid="uid://bell44ht5aq8f"]
 
-[ext_resource type="Texture2D" uid="uid://dh0xc6q5tkdne" path="res://tiles/lights/Light_maybe.png" id="1_vn3ol"]
-[ext_resource type="Texture2D" uid="uid://cpgb17n437so8" path="res://tiles/lights/spirit_orb.png" id="2_suh8d"]
+[ext_resource type="Texture2D" uid="uid://dh0xc6q5tkdne" path="res://lights/Light_maybe.png" id="1_vn3ol"]
+[ext_resource type="Texture2D" uid="uid://cpgb17n437so8" path="res://lights/spirit_orb.png" id="2_suh8d"]
+[ext_resource type="Script" path="res://lights/orb.gd" id="2_uwjly"]
+
+[sub_resource type="Gradient" id="Gradient_syuss"]
+colors = PackedColorArray(0.690446, 0.520721, 1, 1, 0.688, 0.52, 1, 0)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ulwc0"]
 atlas = ExtResource("2_suh8d")
@@ -126,6 +130,18 @@ shadow_filter_smooth = 2.0
 shadow_item_cull_mask = 31
 texture = ExtResource("1_vn3ol")
 texture_scale = 0.75
+script = ExtResource("2_uwjly")
+wander_radius = 50.0
+speed = 5.0
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+amount = 10
+lifetime = 2.0
+speed_scale = 0.8
+emission_shape = 1
+emission_sphere_radius = 10.0
+gravity = Vector2(0, 0)
+color_ramp = SubResource("Gradient_syuss")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_uvd2q")

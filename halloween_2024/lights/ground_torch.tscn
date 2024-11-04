@@ -1,7 +1,10 @@
-[gd_scene load_steps=15 format=3 uid="uid://xjy2e1pqci2m"]
+[gd_scene load_steps=16 format=3 uid="uid://xjy2e1pqci2m"]
 
-[ext_resource type="PackedScene" uid="uid://p3a6uvgvpv6b" path="res://tiles/lights/torch.tscn" id="1_fn6xc"]
-[ext_resource type="Texture2D" uid="uid://cat50k2vd7rnt" path="res://tiles/lights/Ground_torch-Sheet.png" id="2_vthcu"]
+[ext_resource type="PackedScene" uid="uid://p3a6uvgvpv6b" path="res://lights/torch.tscn" id="1_fn6xc"]
+[ext_resource type="Texture2D" uid="uid://cat50k2vd7rnt" path="res://lights/Ground_torch-Sheet.png" id="2_vthcu"]
+
+[sub_resource type="Gradient" id="Gradient_k8mq3"]
+colors = PackedColorArray(0.93, 0.5704, 0.186, 1, 0.93, 0.5704, 0.186, 0)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hem2m"]
 atlas = ExtResource("2_vthcu")
@@ -164,12 +167,23 @@ shadow_filter_smooth = 2.0
 shadow_item_cull_mask = 31
 texture_scale = 0.75
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." index="0"]
+[node name="CPUParticles2D" type="CPUParticles2D" parent="." index="0"]
+position = Vector2(0, -4)
+amount = 5
+lifetime = 2.0
+speed_scale = 0.8
+emission_shape = 1
+emission_sphere_radius = 5.0
+spread = 90.0
+gravity = Vector2(0, 0)
+color_ramp = SubResource("Gradient_k8mq3")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." index="1"]
 y_sort_enabled = true
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_8tn0i")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="1"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="2"]
 libraries = {
 "": SubResource("AnimationLibrary_yc2hw")
 }

@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://wnmn2ig68oqc"]
 
-[ext_resource type="Texture2D" uid="uid://c50m56pwtpwix" path="res://tiles/lights/pumpkinlight.png" id="1_armn2"]
-[ext_resource type="Texture2D" uid="uid://5mw4gwea6kum" path="res://tiles/lights/jackolantern.png" id="2_gs4wr"]
+[ext_resource type="Texture2D" uid="uid://c50m56pwtpwix" path="res://lights/pumpkinlight.png" id="1_armn2"]
+[ext_resource type="Texture2D" uid="uid://5mw4gwea6kum" path="res://lights/jackolantern.png" id="2_gs4wr"]
 
 [node name="PointLight2D" type="PointLight2D"]
 color = Color(0.76, 0.55974, 0.3724, 1)
