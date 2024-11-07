@@ -1,5 +1,6 @@
-[gd_scene load_steps=22 format=4 uid="uid://bgr4ga5c1v7hx"]
+[gd_scene load_steps=23 format=4 uid="uid://bgr4ga5c1v7hx"]
 
+[ext_resource type="PackedScene" uid="uid://ctjlfb0em66vx" path="res://welcome_sign.tscn" id="1_7m30d"]
 [ext_resource type="TileSet" uid="uid://niac6ejfn8ec" path="res://tiles/ground.tres" id="1_7us6a"]
 [ext_resource type="PackedScene" uid="uid://wslof3i2w2pm" path="res://scenes/corn_scene.tscn" id="2_4617c"]
 [ext_resource type="PackedScene" uid="uid://nd82qsrcktei" path="res://scenes/player/player.tscn" id="2_eaps3"]
@@ -45,13 +46,12 @@ outline_color = Color(0, 0, 0, 1)
 [node name="CanvasModulate" type="CanvasModulate" parent="TileMaps"]
 color = Color(0.3936, 0.395513, 0.41, 1)
 
-[node name="player" parent="TileMaps" instance=ExtResource("2_eaps3")]
-position = Vector2(550, 2458)
-stats = ExtResource("3_lcct1")
-
 [node name="Demo" type="Node2D" parent="TileMaps"]
 y_sort_enabled = true
 position = Vector2(6, 1906)
+
+[node name="StaticBody2D" parent="TileMaps/Demo" instance=ExtResource("1_7m30d")]
+position = Vector2(578, 398)
 
 [node name="sign" parent="TileMaps/Demo" instance=ExtResource("11_fvjd6")]
 position = Vector2(546, 502)
@@ -121,8 +121,12 @@ scale = Vector2(2.35, 2.35)
 texture = ExtResource("9_oew87")
 offset = Vector2(4.68085, 405.957)
 
+[node name="player" parent="TileMaps/Demo" instance=ExtResource("2_eaps3")]
+position = Vector2(544, 552)
+stats = ExtResource("3_lcct1")
+
 [node name="anothersign" parent="TileMaps/Demo" instance=ExtResource("11_fvjd6")]
-position = Vector2(578, 422)
+position = Vector2(576, 449)
 text_file = ExtResource("12_vy8do")
 
 [node name="Walls" type="Node2D" parent="TileMaps"]

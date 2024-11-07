@@ -1,3 +1,7 @@
+LightOccluder2D
+Sprite2D
+CollisionShape2D
+StaticBody2D
 CPUParticles2D
 Label
 MarginContainer
@@ -5,9 +9,6 @@ ColorRect
 Control
 CanvasLayer
 RichTextLabel
-Sprite2D
-CollisionShape2D
-StaticBody2D
 Area2D
 AnimationPlayer
 AnimatedSprite2D
