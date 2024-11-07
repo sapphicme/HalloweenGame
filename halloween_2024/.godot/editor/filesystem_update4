@@ -7,3 +7,4 @@ res://scenes/corn_scene.tscn
 res://scenes/player/player.tscn
 res://lights/spirit_orb.tscn
 res://welcome_sign.tscn
+res://scenes/areas/light.gdshader

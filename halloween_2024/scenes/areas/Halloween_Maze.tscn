@@ -54,7 +54,7 @@ position = Vector2(6, 1906)
 position = Vector2(578, 398)
 
 [node name="sign" parent="TileMaps/Demo" instance=ExtResource("11_fvjd6")]
-position = Vector2(546, 502)
+position = Vector2(546, 518)
 text_file = ExtResource("2_q51bd")
 
 [node name="Water" type="TileMapLayer" parent="TileMaps/Demo"]
@@ -126,7 +126,7 @@ position = Vector2(544, 552)
 stats = ExtResource("3_lcct1")
 
 [node name="anothersign" parent="TileMaps/Demo" instance=ExtResource("11_fvjd6")]
-position = Vector2(576, 449)
+position = Vector2(578, 462)
 text_file = ExtResource("12_vy8do")
 
 [node name="Walls" type="Node2D" parent="TileMaps"]
